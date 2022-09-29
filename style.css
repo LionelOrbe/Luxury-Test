@@ -6,6 +6,48 @@
     overflow-x: hidden;
     font-family:"Tenor Sans";
  }
+ .navbar{
+    color: #FFFF;
+    font-size: 1.2vw;
+    position: fixed;
+    left: 0;
+     top: -9vh;
+     right: 0;
+     transition: 0.5s;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   z-index: 10;
+   background-color: transparent;
+ }
+ .hoverline{
+        width: fit-content;
+        padding: 5px;
+        
+ }
+ .hoverline:hover{
+   
+   border-bottom: solid #FFFF 1px;
+   transform: translateY(1px);
+   
+   
+ }
+ .navbar:hover{
+    transition: 0.5s;
+    top: 0;
+    background-color: #162d54;
+ }
+ .logo{
+    width: 30vw;
+ }
+ 
+ .logoimg{
+    width:  10vw;
+    filter: invert(100%);
+
+ }
 .subtitle  {
     font-size: 1rem;
     position: absolute;
@@ -37,11 +79,12 @@
     align-items: center;
 }
 .container{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-left: -10px;
     margin-top: -10px;
-    width: calc(100vw + 10px);
+    width: calc(100% + (20px));
     /* background-color: #162d54; */
     left: auto;
     align-items: center;
@@ -187,11 +230,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: calc(100% + (20px));
     height: 100%;
     margin-left: -5px;
 }
 .footerimg{
+    margin-left: -10px;
     width: 100%;
 }
 .footer h2 {
@@ -220,6 +264,9 @@
     z-index: 3;
 }
 @media (max-width: 800px) {
+    .logo{
+        display: none;
+    }
     .itemcontainer1, .itemcontainer2 {
         flex-direction: column;
         width: 90vw;
@@ -285,5 +332,13 @@ margin-top: 30%;
     }
     .bluetitle{
 margin-top: -5%;
+    }
+    .navbar{
+        top: 0;
+        background-color: #162d54;
+        height: 6vh;
+    }
+    .container{
+        margin-top: 6vh;
     }
 }
