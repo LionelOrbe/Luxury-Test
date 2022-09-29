@@ -11,10 +11,10 @@
     font-size: 1.2vw;
     position: fixed;
     left: 0;
-     top: -9vh;
+     top: -65px;
      right: 0;
      transition: 0.5s;
-    height: 5rem;
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -324,6 +324,10 @@
     }
     .intro{ 
         opacity: 0;
+    }
+    .navbar{
+        height: 50px;
+        top: -30px;
     }
 }
 @media (orientation: portrait){
