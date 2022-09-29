@@ -128,7 +128,7 @@
 .line2{
     position: relative;
     
-    width: 40vw;
+    width: 35vw;
     height: 1px;
     background-color:#162d54;
     z-index: 3;
@@ -161,7 +161,7 @@
     padding: 3vw;
     left: 0%;
     padding-left: 5vw;
-    width: 60%;
+    width: 65%;
     height: 90%;
     background-color:#9d6c38;
 }
@@ -242,5 +242,8 @@
         25px 26px 50px rgba(0, 0, 0, 0.13)
       ;
       
+    }
+    .intro{ 
+        opacity: 0;
     }
 }
