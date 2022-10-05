@@ -45,7 +45,7 @@
  
  .logoimg{
     width:  10vw;
-    filter: invert(100%);
+    /* filter: invert(100%); */
 
  }
 .subtitle  {
